@@ -4,7 +4,7 @@ node default {
     content => 'Politicians are clowns',
     owner   => 'root',
   }
-  file {'root/README':
+  file {'/root/README':
     owner => 'root',
   }
 }

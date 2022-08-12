@@ -21,7 +21,7 @@ class minecraft (
     ensure => file,
     content => epp(‘minecraft/minecraft.service.epp’, {
       install_dir => $install_dir,
-    }),
+    })
   }
   service {'minecraft':
     ensure => running,

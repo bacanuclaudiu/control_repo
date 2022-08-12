@@ -23,7 +23,7 @@ class minecraft (
       install_dir => $install_dir,
     })
   }
-  service {'minecraft':
+  service {'minecraft.service':
     ensure => running,
     enable => true,
   }
